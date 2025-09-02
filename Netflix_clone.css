@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: aliceblue;
+}
+
+#head {
+  background-image: url(background_image.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;   /* ❗ overlay ke liye zaroori */
+  z-index: 0;
+}
+
+#head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black; /* black overlay */
+  opacity: 0.7;            /* dark effect */
+  z-index: 1;              /* overlay upar hai */
+}
+
+#head > * {
+  position: relative;
+  z-index: 2;   /* logo, button, text overlay ke upar */
+}
+
+#logo {
+  height: 400px;
+  width: 150px;
+  position: relative;
+  bottom: 250px;
+  right: 300px;
+  background-color: transparent;
+}
+
+#button {
+  height: 32px;
+  width: 76.91px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+  bottom: 250px;
+  left: 300px;
+}
+
+#language {
+  width: 150px;
+  height: 32px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  bottom: 250px;
+  left: 285px;
+}
+
+.option {
+  color: black;
+  background-color: white;
+}
+
+#heading1 {
+  position: relative;
+  bottom: 430px;
+  color: white;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 60px;
+  background-color: transparent;
+  line-height: normal;
+
+}
+#heading2 {
+  position: relative;
+  bottom: 430px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  
+}
+#heading3 {
+  position: relative;
+  bottom: 430px;
+  color: white;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px;
+  font-size: 20px;
+  background-color: transparent;
+}
+#start{
+  height: 60px;
+  width: 150px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 430px;
+  left: 310px;
+  font-weight: 900;
+  font-size: 20px;
+}
+#email{
+  width: 500px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid blanchedalmond;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  position: relative;
+  bottom: 430px;
+  left: 300px;
+}
+#gallery{
+  display: inline-block;
+  position: relative;
+  bottom: 250px;
+  border-radius: 10px;
+}
+#heading4{
+  position: relative;
+  bottom: 260px;
+  left: 40px;
+}
+.image{
+  border-radius: 20px;
+}
+#heading5{
+  position: relative;
+  bottom: 180px;
+  left: 40px;
+  font-size: 30px;
+}
+.Reasons{
+  display: inline-block;
+height: 120px;
+width: 1150px;
+border-radius: 10px;
+text-align: left;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+font-size: 15px;
+margin: 20px;
+position: relative;
+bottom: 200px;
+padding: 24px; 
+font-size: 20px;
+  background: 
+  radial-gradient(circle at 80% 20%, rgba(144, 79, 152, 0.15) 0%, transparent 50%),
+  radial-gradient(circle at 20% 80%, rgba(28, 8, 57, 0.15) 0%, transparent 50%),
+  linear-gradient(180deg, rgba(49, 48, 92, 0.9) 0%, rgba(24, 7, 11, 0.9) 100%);
+  color: rgba(255, 255, 255, 0.5);
+}
+h1{
+  line-height: 50px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+}
+.ques {
+display: inline-block;
+height: 12px;
+width: 1150px;
+text-align: left;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+font-size: 20px;
+margin: -40px;
+position: relative;
+left: 66px;
+bottom: 155px;
+padding: 24px; 
+background-color: rgba(108, 100, 100, 0.5);
+}
+.plus{
+  background-color: transparent;
+  position: relative;
+  left: 1100px;
+  bottom: 50px;
+  font-size: 60px;
+}
+#heading6{
+  position: relative;
+  bottom: 200px;
+  left: 50px;
+}
+#statement{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 130px;
+  left: 300px;
+}
+#emailtwo{
+  width: 500px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid blanchedalmond;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  position: relative;
+  bottom: 120px;
+  left: 270px;
+}
+#starttwo{
+    height: 60px;
+  width: 150px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 120px;
+  left: 280px;
+  font-weight: 900;
+  font-size: 20px;
+
+}
+#line{
+  text-align: left;
+  position: relative;
+  right: 560px;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ek line mein 4 */
+  column-gap: 30px;  /* right/left gap */
+  row-gap: 20px;     /* top/bottom gap */
+  position: relative;
+  left: 100px;
+}
+.links {
+  margin-right: 40px; /* right side space */
+  margin-bottom: 30px; /* bottom side space */
+}
+#languagetwo {
+  width: 150px;
+  height: 32px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+#wow{
+  position: relative;
+  margin: 100px;
+}
+#wowtwo{
+    position: relative;
+  left: 100px;
+  bottom:  80px;
+}
