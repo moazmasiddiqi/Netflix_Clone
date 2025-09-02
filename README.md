@@ -22,7 +22,3 @@ The project replicates the look and feel of the Netflix homepage for practice an
 ## 📸 Preview
 https://github.com/user-attachments/assets/bb51fe2d-01c4-4bec-a400-2817e6b38de8
 
-
-
-## 📧 Contact
-💼 LinkedIn: [Your Name](https://www.linkedin.com/in/your-linkedin-username/)
